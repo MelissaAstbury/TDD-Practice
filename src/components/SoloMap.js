@@ -1,11 +1,9 @@
 import React from "react";
 
-const SoloMap = () => {
-    return (
-        <div>
-            <p>This is the map</p>
-        </div>
-    )
-};
+const SoloMap = () => (
+  <div>
+    <img src="images/none.png" alt="No store selected" />
+  </div>
+);
 
 export default SoloMap;

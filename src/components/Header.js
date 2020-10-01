@@ -1,11 +1,11 @@
 import React from "react";
 
 const Header = () => {
-    return (
-        <div className="header">
-            <p>This is the header</p>
-        </div>
-    )
+  return (
+    <div className="header">
+      <img src="images/logo.png" alt="testing-logo" />
+    </div>
+  );
 };
 
 export default Header;

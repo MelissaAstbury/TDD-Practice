@@ -1,9 +1,24 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import SoloMap from '../SoloMap';
+import React from "react";
+// import ReactDOM from "react-dom";
+import { shallow } from "enzyme";
+import SoloMap from "../SoloMap";
 
-test('renders learn header component', () => {
-    const { getByText } = render(<SoloMap />);
-    const linkElement = getByText(/This is the map/i);
-    expect(linkElement).toBeInTheDocument();
+describe("SoloMap", () => {
+  let mountedSoloMap;
+  beforeEach(() => {
+    mountedSoloMap = shallow(<SoloMap />);
   });
+
+  it("renders without crashing", () => {
+    shallow(<SoloMap />);
+  });
+
+  it("contains an image", () => {
+    const img = mountedSoloMap.find("img");
+    expect(img.length).toBe(1);
+  });
+
+  it("displays the none map when no params are given", () => {
+    expect(mountedSoloMap.find("img").prop("src")).toEqual("images/none.png");
+  });
+});

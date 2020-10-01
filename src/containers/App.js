@@ -1,14 +1,12 @@
-import React from 'react';
-import StoreLocator from "../containers/StoreLocator";
-import '../App.css';
+import React from "react";
+import StoreLocator from "./StoreLocator";
 
 const App = () => {
   return (
-    <div className="App">
+    <div>
       <StoreLocator />
-      <p>This is the app</p>
     </div>
   );
-}
+};
 
 export default App;

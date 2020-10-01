@@ -1,9 +1,20 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import Header from '../Header';
+import React from "react";
+import ReactDOM from "react-dom";
+import { shallow } from "enzyme";
+import Header from "../Header";
 
-test('renders learn header component', () => {
-    const { getByText } = render(<Header />);
-    const linkElement = getByText(/This is the header/i);
-    expect(linkElement).toBeInTheDocument();
+describe("Header", () => {
+  let mountedHeader;
+  beforeEach(() => {
+    mountedHeader = shallow(<Header />);
   });
+
+  it("renders without crashing", () => {
+    const div = document.createElement("div");
+    ReactDOM.render(<Header />, div);
+  });
+
+  it("renders a logo", () => {
+    expect(mountedHeader.find("img").prop("src")).toEqual("images/logo.png");
+  });
+});

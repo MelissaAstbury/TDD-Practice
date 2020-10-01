@@ -1,5 +1,7 @@
 import React from "react";
 
-const Button = () => <button>Store</button>;
+import "./Button.css";
+
+const Button = () => <button className="location-btn">Store</button>;
 
 export default Button;

@@ -1,9 +1,11 @@
 import React from "react";
 import StoreLocator from "./StoreLocator";
 
+import "../App.css";
+
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <StoreLocator />
     </div>
   );

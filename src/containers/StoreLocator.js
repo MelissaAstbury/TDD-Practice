@@ -4,14 +4,16 @@ import Button from "../components/Button";
 import SoloMap from "../components/SoloMap";
 
 const StoreLocator = () => {
-    return (
-        <div>
-            <Header />
-            <Button />
-            <Button />
-            <SoloMap />
-        </div>
-    )
+  return (
+    <div>
+      <Header />
+      <div>
+        <Button />
+        <Button />
+      </div>
+      <SoloMap />
+    </div>
+  );
 };
 
 export default StoreLocator;

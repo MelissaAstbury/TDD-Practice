@@ -19,6 +19,6 @@ describe("SoloMap", () => {
   });
 
   it("displays the none map when no params are given", () => {
-    expect(mountedSoloMap.find("img").prop("src")).toEqual("images/none.png");
+    expect(mountedSoloMap.find("img").prop("src")).toEqual("images/photo1.png");
   });
 });

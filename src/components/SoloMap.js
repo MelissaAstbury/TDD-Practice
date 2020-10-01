@@ -1,8 +1,10 @@
 import React from "react";
 
+import "./SoloMap.css";
+
 const SoloMap = () => (
-  <div>
-    <img src="images/none.png" alt="No store selected" />
+  <div className="map-box">
+    <img src="images/photo1.png" alt="No store selected" />
   </div>
 );
 

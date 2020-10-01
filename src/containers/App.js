@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from "../components/Header";
+import StoreLocator from "../containers/StoreLocator";
 import '../App.css';
 
 const App = () => {
   return (
     <div className="App">
-      <Header />
+      <StoreLocator />
       <p>This is the app</p>
     </div>
   );

@@ -2,6 +2,10 @@ import React from "react";
 
 import "./Button.css";
 
-const Button = () => <button className="location-btn">Store</button>;
+const Button = (props) => (
+  <button className="location-btn">
+    {props.location ? props.location : "All Locations"}
+  </button>
+);
 
 export default Button;
